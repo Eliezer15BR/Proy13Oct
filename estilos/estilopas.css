@@ -1,0 +1,101 @@
+.contenedor
+{   
+   height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 5fr 1fr; 
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido ads"
+                         "footer footer";
+}
+.contenedor .header
+{
+    background-color:powderblue;
+    grid-area: header;
+}
+.contenedor .nav
+{
+    background-color: azure;
+    grid-area:nav;
+}
+.contenedor .contenido
+{
+    background-color: burlywood;
+    grid-area:contenido;
+}
+.contenedor .ads
+{
+    background-color: cornflowerblue;
+    grid-area: ads;
+}
+.contenedor .footer
+{
+    background-color: darkkhaki;
+    grid-area: footer;
+}
+.carousel-item
+{
+    width: 500px;
+    height: 500px;
+}
+.carousel-item .carousel-caption h5
+{
+    color: aliceblue !important;
+    font-weight: 500 !important;
+    font-size: 30px !important;
+}
+.carousel-indicators button
+{
+    background-color: aliceblue !important;
+    color: aliceblue;
+}
+.carousel-control-prev
+{
+    color:aliceblue !important;
+    background-color: aliceblue !important;
+}
+.carousel-control-next
+{
+    color:aliceblue !important;
+    background-color: aliceblue !important;
+}
+.accordion-body a:link
+{
+    color: magenta;
+    text-decoration: none;
+}
+.accordion-body a:visited
+{
+    color: blue;
+    text-decoration: none;
+}
+.accordion-body a:hover
+{
+    color: magenta !important;
+    text-decoration: none;
+}
+.accordion-body a:active
+{
+    color: rgb(116, 0, 116) !important;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+    .contenedor
+    {
+        grid-template-columns: 1fr 1fr;
+        
+        grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido contenido"
+                         "ads ads"
+                         "footer footer";
+    }
+    .carousel-item
+{
+    width: 300px;
+    height: 300px;
+}
+}

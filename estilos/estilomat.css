@@ -1,0 +1,121 @@
+.contenedor
+{   
+   
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 5fr 1fr; 
+    grid-template-rows: 1fr 1fr 8.8fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido ads"
+                         "footer footer";
+}
+.contenedor .header
+{
+    background-color:cornflowerblue;
+    grid-area: header;
+}
+.contenedor .nav
+{
+    background-color: azure;
+    grid-area:nav;
+}
+.card-img-top
+{
+    width: 300px;
+    height: 350px;
+}
+.contenedor .contenido
+{
+    text-align: center;
+    background-color: burlywood;
+    grid-area:contenido;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:"texto texto texto" 
+                        "inf121 inf122 inf123"
+                        "inf124 inf125 inf126";
+    grid-gap: 5px;
+}
+.contenedor .contenido .texto
+{   
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-area: texto;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+.contenedor .contenido .inf121
+{
+    grid-area: inf121;
+}
+.contenedor .contenido .inf122
+{
+    grid-area: inf122;
+}
+.contenedor .contenido .inf123
+{
+    grid-area: inf123;
+}
+.contenedor .contenido .inf124
+{
+    grid-area: inf124;
+}
+.contenedor .contenido .inf125
+{
+    grid-area: inf125;
+}
+.contenedor .contenido .inf126
+{
+    grid-area: inf126;
+}
+.contenedor .ads
+{
+    background-color: cornflowerblue;
+    grid-area: ads;
+    display: flexbox;
+    flex-direction: column;
+
+    
+}
+.textads
+{
+    background-color: aliceblue;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.contenedor .footer
+{
+    background-color: darkkhaki;
+    grid-area: footer;
+}
+.carousel-item
+{
+    width: 500px;
+    height: 500px;
+}
+@media screen and (max-width:768px) {
+    .contenedor
+    {
+        
+        grid-template-rows: 0.1fr 0.1fr 3fr 1fr;
+        grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido contenido"
+                         "ads ads"
+                         "footer footer";
+    }
+}
